@@ -109,7 +109,7 @@ def IfUpload(sock, path, root_download_file):
     with open(md5list, 'a+') as f:
         str = m.decode('utf-8') + ' ' + root_download_file + '\n'
         f.write(str)
-    apath = root_download_file + filename.decode('utf-8')
+    apath = root_download_file + filename
     # print path
     with open(apath, 'wb') as f:
         while True:
